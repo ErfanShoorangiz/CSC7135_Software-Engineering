@@ -1,38 +1,130 @@
-.App {
+/* Reset some basic elements */
+/* App.css */
+body {
+  
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden; /* Prevents horizontal scrollbar */
+  font-family: 'Poppins', sans-serif;
+  
+}
+.upload-container{
+  background-image: url('backgroundimg.png'); /* Note the '/' at the start */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Optional: Makes the background fixed during scroll */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+}
+.upload-form {
+  background-color: rgba(255, 255, 255, 0.9); /* Optional: Make form slightly transparent */
+  padding: 20px;
+  border-radius: 8px;
+  /* Other styling properties */
+}
+h1, h2, h3, p, button {
+  margin: 0;
+  box-sizing: border-box;
+  background-image: ('./backgroundimg.png'); /* Adjust the path as needed */
+  background-size: cover;
+  background-position: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  /*background-color: blanchedalmond;*/
+  padding: 20px;
+  /* App.css */
+
+}
+.container {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.sentimentlogo {
+  width: 100px; /* Default size for mobile */
+  height: auto;
+  display: block; /* Center the logo */
+  margin: 0 auto; /* Center the logo */
+  border-radius: 50%;
+}
+
+.button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em; /* Responsive font size */
+}
+
+/* Utility Classes */
+.text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Typography */
+h1, h2, h3 {
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+p {
+  margin-bottom: 1em;
+}
+/* Tablets and small desktops */
+@media (min-width: 768px) {
+  .sentimentlogo {
+    width: 150px; /* Adjust logo size */
+  }
+  
+  .button {
+    padding: 15px 30px; /* Larger buttons */
+    font-size: 1.2em; /* Larger text */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Large desktops */
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 30px; /* More padding on larger screens */
   }
-  to {
-    transform: rotate(360deg);
+  
+  .sentimentlogo {
+    width: 200px; /* Further increase logo size */
+  }
+  
+  h1 {
+    font-size: 2.5em; /* Larger headings */
+  }
+  
+  h2 {
+    font-size: 2em;
+  }
+  
+  h3 {
+    font-size: 1.75em;
+  }
+
+  p {
+    font-size: 1.25em; /* Larger paragraph text */
   }
 }
+  footer {
+    
+    
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    
+
+  }
+  
