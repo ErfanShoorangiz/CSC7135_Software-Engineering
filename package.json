@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "frontend",
+=======
+  "name": "tweet-sentiment-analyzer",
+>>>>>>> 5f7bf41 (Initialize project using Create React App)
   "version": "0.1.0",
   "private": true,
   "dependencies": {
