@@ -20,7 +20,7 @@ handleSubmit = (event)=>{
     .then(data=> alert('Sentiment: $(data.sentiment)')) //displaying sentiment in an alert for simplicity
     .catch(error=> console.error('Error:', error));
 };
-render(){
+
     return(
         <div className="container">
         <h1>Welcome to Tweet Sentiment Analyzer</h1>
@@ -36,5 +36,6 @@ render(){
         </form>
     </div>
      );
-}
+
+
 export default LandingPage;
