@@ -1,11 +1,15 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from textblob import TextBlob
-
+from flask_wtf import CSRFProtect
 app = Flask(__name__)
-CORS(app)
+csrf = CSRFProtect(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 @app.route('/analyze', methods = ['POST'])
+
+#testing for simple server running
+@app.route("/")
 def analyze():
     data = request.get_json()
     tweet = data['tweet']
