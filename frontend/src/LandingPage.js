@@ -16,16 +16,11 @@ class LandingPage extends React.Component {
     headers: {
         'Content-Type': 'application/json'
     },
-    body: JSON.stringify({
-        // your data here
-    })
+    body: JSON.stringify({tweet: this.state.tweet})
 })
 .then(response => response.json())
 .then(data => console.log(data))
 .catch(error => console.error('Error:', error));
-
-
-
 
     };
 
