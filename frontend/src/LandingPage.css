@@ -1,36 +1,85 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+/* General body styling */
+body {
+  background: 'frontend/src/bgimageforprojcet.png' no-repeat center center fixed; 
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333; /* Ensure text is readable on the given background */
+}
+
+/* Container styling */
+div {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white for legibility */
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
 h1 {
-    color: #333;
-    margin-bottom: 20px;
+  font-size: 24px;
 }
 
-.tweet-input {
-    width: 300px;
-    padding: 10px;
+/* Input field styling */
+input[type="text"] {
+  width: calc(100% - 40px);
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Button styling */
+button {
+  background-color: #5a8dee;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4a7cd8;
+}
+
+/* Results styling */
+p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    align-items: start;
+    padding-top: 20px;
+  }
+  
+  div {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  input[type="text"], button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  p {
     font-size: 16px;
-    margin-bottom: 10px;
-    border: 2px solid #007BFF;
-    border-radius: 5px;
-}
-
-.submit-button {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.submit-button:hover {
-    background-color: #0056b3;
+  }
 }
