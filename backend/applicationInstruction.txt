@@ -1,0 +1,23 @@
+1. /api/analyze
+curl -X POST http://localhost:5000/api/analyze -H "Content-Type: application/json" -d "{\"tweet\":\"Excited about the new AI advancements.\"}"
+
+2. /bertopic/analyze
+curl -X POST http://localhost:5000/bertopic/analyze -H "Content-Type: application/json" -d "{\"tweet\":\"Excited about the new AI advancements.\"}"
+
+3. /sentiment/analyze
+curl -X POST http://localhost:5000/sentiment/analyze -H "Content-Type: application/json" -d "{\"tweet\":\"Excited about the new AI advancements.\"}"
+
+4. /topic/analyze
+curl -X POST http://localhost:5000/topic/analyze -H "Content-Type: application/json" -d "{\"tweet\":\"Excited about the new AI advancements.\"}"
+
+
+
+Instructions to Run the Project
+Backend:
+Navigate to /backend.
+Run pip install -r requirements.txt to install dependencies.
+Run python app.py to start the Flask server.
+Frontend:
+Navigate to /frontend.
+Run npm install to install dependencies.
+Run npm start to start the React development server.
